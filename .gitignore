@@ -4,6 +4,8 @@ Intermediate
 Saved
 Build
 
+.vsconfig
+.idea
 .vscode
 .vs
 *.VC.db
