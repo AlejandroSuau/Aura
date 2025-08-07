@@ -1,4 +1,4 @@
-// Copyright The True Boolean
+ // Copyright The True Boolean
 
 #pragma once
 
