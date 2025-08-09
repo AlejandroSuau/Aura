@@ -17,7 +17,7 @@ AAuraEffectActor::AAuraEffectActor()
 	
 	Sphere = CreateDefaultSubobject<USphereComponent>("Sphere");
 	Sphere->SetupAttachment(GetRootComponent());
-}
+}w
 
 void AAuraEffectActor::OnOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor,
 	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
@@ -28,7 +28,7 @@ void AAuraEffectActor::OnOverlap(UPrimitiveComponent* OverlappedComponent, AActo
 			ASCInterface->GetAbilitySystemComponent()->GetAttributeSet(UAuraAttributeSet::StaticClass()));
 		
 		UAuraAttributeSet* MutAuraAttributeSet = const_cast<UAuraAttributeSet*>(AuraAttributeSet);
-		MutAuraAttributeSet->SetHealth(AuraAttributeSet->GetHealth() + 25.f);
+		MutAuraAttributeSet->SetMana(AuraAttributeSet->GetMana() + 25.f);
 		Destroy();
 	}	
 }
