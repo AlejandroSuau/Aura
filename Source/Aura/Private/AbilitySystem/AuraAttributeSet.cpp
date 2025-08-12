@@ -1,8 +1,7 @@
 // Copyright The True Boolean
-
+#include "AbilitySystem/AuraAttributeSet.h"
 
 #include "GameFramework/Character.h"
-#include "AbilitySystem/AuraAttributeSet.h"
 
 #include "AbilitySystemBlueprintLibrary.h"
 #include "GameplayEffectExtension.h"  
